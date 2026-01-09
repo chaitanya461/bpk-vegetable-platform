@@ -1,0 +1,71 @@
+-- Insert vegetable categories
+INSERT INTO categories (name, description, image_url) VALUES
+('Leafy Vegetables', 'Fresh green leafy vegetables rich in nutrients', 'https://images.unsplash.com/photo-1540420773420-3366772f4999'),
+('Root Vegetables', 'Nutrient-rich vegetables grown underground', 'https://images.unsplash.com/photo-1590779033100-9f60a05a013d'),
+('Fruits-Vegetables', 'Vegetables that are botanically fruits', 'https://images.unsplash.com/photo-1567306226416-28f0efdc88ce'),
+('Cruciferous Vegetables', 'Vegetables from cabbage family', 'https://images.unsplash.com/photo-1566385101042-1a0f0c126c96'),
+('Alliums', 'Onion and garlic family vegetables', 'https://images.unsplash.com/photo-1593344484962-796d56c5b1c1'),
+('Gourds', 'Various types of Indian gourds', 'https://images.unsplash.com/photo-1566385101042-1a0f0c126c96'),
+('Herbs', 'Fresh herbs and spices', 'https://images.unsplash.com/photo-1518621736915-f3b1c41bfd00'),
+('Exotic Vegetables', 'Special and imported vegetables', 'https://images.unsplash.com/photo-1566385101042-1a0f0c126c96');
+
+-- Insert vegetable products
+INSERT INTO products (name, description, price, category_id, stock_quantity, unit, is_organic, image_url) VALUES
+-- Leafy Vegetables (category_id: 1)
+('Spinach (Palak)', 'Fresh organic spinach leaves, rich in iron and vitamins. Perfect for curries and salads.', 25.00, 1, 150, 'bunch', true, 'https://images.unsplash.com/photo-1576045057995-568f588f82fb'),
+('Coriander Leaves (Dhaniya)', 'Fresh aromatic coriander leaves for garnishing and flavoring dishes.', 10.00, 1, 200, 'bunch', false, 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a7'),
+('Methi Leaves (Fenugreek)', 'Fresh fenugreek leaves with medicinal properties, great for parathas and curries.', 30.00, 1, 100, 'bunch', true, 'https://cdn.pixabay.com/photo/2016/11/29/08/24/fenugreek-1868501_1280.jpg'),
+('Lettuce', 'Crisp fresh lettuce leaves for salads and sandwiches.', 40.00, 1, 80, 'piece', true, 'https://images.unsplash.com/photo-1540420773420-3366772f4999'),
+('Spring Onions', 'Fresh spring onions with green tops, perfect for Chinese and Indian cuisine.', 20.00, 1, 120, 'bunch', false, 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a7'),
+
+-- Root Vegetables (category_id: 2)
+('Carrot', 'Sweet and crunchy orange carrots, rich in vitamin A.', 40.00, 2, 200, 'kg', true, 'https://images.unsplash.com/photo-1598170845058-78131a90f4bf'),
+('Potato', 'Fresh potatoes, perfect for curries, fries, and all Indian dishes.', 30.00, 2, 300, 'kg', false, 'https://images.unsplash.com/photo-1518977676601-b53f82aba655'),
+('Onion', 'Fresh red onions, essential for Indian cooking.', 35.00, 2, 500, 'kg', false, 'https://images.unsplash.com/photo-1580201092675-a0a6a6cafbb1'),
+('Beetroot', 'Organic beetroot, great for salads and juices.', 30.00, 2, 100, 'kg', true, 'https://images.unsplash.com/photo-1559181569-d4b5e0e5d1d6'),
+('Radish (Mooli)', 'White radish, crisp and peppery, perfect for salads and parathas.', 25.00, 2, 150, 'kg', false, 'https://cdn.pixabay.com/photo/2018/04/23/15/08/radish-3344478_1280.jpg'),
+('Sweet Potato', 'Nutritious sweet potatoes, rich in fiber and vitamins.', 50.00, 2, 80, 'kg', true, 'https://images.unsplash.com/photo-1566385101042-1a0f0c126c96'),
+('Ginger (Adrak)', 'Fresh ginger root, essential for Indian cooking and tea.', 120.00, 2, 100, 'kg', false, 'https://images.unsplash.com/photo-1584732201005-0c3d52c4f1d3'),
+('Garlic (Lahsun)', 'Fresh garlic bulbs, packed with flavor and health benefits.', 150.00, 2, 200, 'kg', false, 'https://images.unsplash.com/photo-1584732201005-0c3d52c4f1d3'),
+
+-- Fruits-Vegetables (category_id: 3)
+('Tomato', 'Fresh red tomatoes, vine-ripened and juicy.', 30.00, 3, 400, 'kg', true, 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea'),
+('Capsicum (Bell Pepper)', 'Fresh colorful capsicums - green, red, and yellow.', 80.00, 3, 150, 'kg', true, 'https://images.unsplash.com/photo-1566385101042-1a0f0c126c96'),
+('Brinjal (Eggplant)', 'Fresh purple brinjals, perfect for baingan bharta and curries.', 40.00, 3, 120, 'kg', false, 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea'),
+('Cucumber', 'Fresh green cucumbers, crisp and hydrating.', 20.00, 3, 200, 'kg', true, 'https://images.unsplash.com/photo-1566385101042-1a0f0c126c96'),
+('Lemon', 'Fresh juicy lemons, perfect for drinks and cooking.', 60.00, 3, 300, 'dozen', false, 'https://images.unsplash.com/photo-1582281298055-e25b84a30b0b'),
+('Okra (Bhindi)', 'Tender okra, great for frying and curries.', 50.00, 3, 100, 'kg', false, 'https://cdn.pixabay.com/photo/2016/11/23/00/32/okra-1851421_1280.jpg'),
+
+-- Cruciferous Vegetables (category_id: 4)
+('Cauliflower', 'Fresh white cauliflower, perfect for curries and snacks.', 40.00, 4, 150, 'piece', false, 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a7'),
+('Cabbage', 'Fresh green cabbage, great for salads and sabzis.', 25.00, 4, 120, 'piece', false, 'https://images.unsplash.com/photo-1576045057995-568f588f82fb'),
+('Broccoli', 'Fresh broccoli florets, rich in nutrients and antioxidants.', 80.00, 4, 80, 'piece', true, 'https://images.unsplash.com/photo-1459411552884-841db9b3cc2a'),
+
+-- Alliums (category_id: 5)
+('Red Onion', 'Sweet red onions, perfect for salads and raw consumption.', 50.00, 5, 200, 'kg', true, 'https://images.unsplash.com/photo-1580201092675-a0a6a6cafbb1'),
+('Shallots', 'Small shallots with delicate flavor, perfect for sambar and chutneys.', 100.00, 5, 80, 'kg', false, 'https://cdn.pixabay.com/photo/2016/11/23/00/32/shallots-1851423_1280.jpg'),
+('Garlic Pods', 'Individual garlic pods, fresh and aromatic.', 200.00, 5, 150, 'kg', false, 'https://images.unsplash.com/photo-1584732201005-0c3d52c4f1d3'),
+('Leek', 'Fresh leeks with mild onion flavor, great for soups.', 120.00, 5, 60, 'bunch', true, 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a7'),
+
+-- Gourds (category_id: 6)
+('Bottle Gourd (Lauki)', 'Fresh bottle gourd, light and easy to digest.', 30.00, 6, 100, 'kg', false, 'https://cdn.pixabay.com/photo/2016/11/23/00/32/bottle-gourd-1851424_1280.jpg'),
+('Bitter Gourd (Karela)', 'Fresh bitter gourd with medicinal properties.', 60.00, 6, 80, 'kg', false, 'https://cdn.pixabay.com/photo/2016/11/23/00/32/bitter-gourd-1851425_1280.jpg'),
+('Ridge Gourd (Turai)', 'Fresh ridge gourd with ridged skin.', 40.00, 6, 90, 'kg', false, 'https://cdn.pixabay.com/photo/2016/11/23/00/32/ridge-gourd-1851426_1280.jpg'),
+('Snake Gourd', 'Long snake gourd, perfect for curries.', 35.00, 6, 70, 'kg', false, 'https://cdn.pixabay.com/photo/2016/11/23/00/32/snake-gourd-1851427_1280.jpg'),
+('Pumpkin (Kaddu)', 'Sweet pumpkin, great for curries and desserts.', 25.00, 6, 120, 'kg', true, 'https://images.unsplash.com/photo-1566385101042-1a0f0c126c96'),
+
+-- Herbs (category_id: 7)
+('Mint Leaves (Pudina)', 'Fresh mint leaves for chutneys and drinks.', 15.00, 7, 180, 'bunch', true, 'https://images.unsplash.com/photo-1584732201005-0c3d52c4f1d3'),
+('Curry Leaves', 'Aromatic curry leaves for tempering Indian dishes.', 5.00, 7, 250, 'bunch', false, 'https://cdn.pixabay.com/photo/2016/11/23/00/32/curry-leaves-1851428_1280.jpg'),
+('Basil (Tulsi)', 'Holy basil leaves with medicinal properties.', 20.00, 7, 100, 'bunch', true, 'https://images.unsplash.com/photo-1584732201005-0c3d52c4f1d3'),
+('Dill Leaves (Suva)', 'Fresh dill leaves with unique flavor.', 35.00, 7, 80, 'bunch', false, 'https://cdn.pixabay.com/photo/2016/11/23/00/32/dill-1851429_1280.jpg'),
+
+-- Exotic Vegetables (category_id: 8)
+('Zucchini', 'Fresh zucchini, great for grilling and pasta.', 120.00, 8, 60, 'kg', true, 'https://images.unsplash.com/photo-1566385101042-1a0f0c126c96'),
+('Avocado', 'Creamy ripe avocados, perfect for salads and toast.', 200.00, 8, 40, 'piece', true, 'https://images.unsplash.com/photo-1523049673857-eb18f1d7b578'),
+('Asparagus', 'Fresh green asparagus spears, tender and flavorful.', 250.00, 8, 30, 'bunch', true, 'https://images.unsplash.com/photo-1584732201005-0c3d52c4f1d3'),
+('Artichoke', 'Fresh artichokes, great for steaming and dips.', 180.00, 8, 25, 'piece', true, 'https://images.unsplash.com/photo-1592417817098-8fd3d9eb14a7'),
+('Kale', 'Nutrient-packed kale leaves for salads and smoothies.', 150.00, 8, 50, 'bunch', true, 'https://images.unsplash.com/photo-1540420773420-3366772f4999'),
+('Baby Corn', 'Sweet baby corn for Chinese and Indian dishes.', 90.00, 8, 70, 'packet', false, 'https://images.unsplash.com/photo-1566385101042-1a0f0c126c96'),
+('Cherry Tomatoes', 'Sweet cherry tomatoes, perfect for salads.', 120.00, 8, 100, 'packet', true, 'https://images.unsplash.com/photo-1592924357228-91a4daadcfea'),
+('Colored Capsicum Mix', 'Assorted colored capsicums - red, yellow, orange.', 150.00, 8, 60, 'packet', true, 'https://images.unsplash.com/photo-1566385101042-1a0f0c126c96');
